@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.otp-page-wrapper-bg{
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  z-index: -1;
+  top:0;
+  background: linear-gradient(0deg, #7EDEFF -70.29%, #0041B1 100%);
+}
+
+.otp-page-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #F5F5F5;
+  z-index: -2;
+}
+
+.otp-page-container{
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 700px;
+  display: grid;
+  grid-template-rows: 2fr 7fr 1fr;
+}
+
+.otp-page-details-wrapper{
+  padding: 5px;
+  padding-bottom: 0px;
+}
+
+.otp-page-details{
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  background: #E6F0FF;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.otp-page-details-element{
+  display: flex;
+  flex-direction: column;
+}
+
+#right-detail-element{
+  align-items: flex-end;
+}
+
+.otp-collect-box-wrapper{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #DDD;
+  background: #FFF;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.otp-collect-box{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
+.otp-collect-box-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.otp-collect-box-header-logo img{
+  height: 32px;
+}
+
+.otp-collect-box-footer-logo img{
+  position: absolute;
+  top: 47%;
+  left: 25%;
+  height: 20px;
+}
+
+.otp-collect-box-footer-logo{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-collect-box-footer-logo span{
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  font-weight: 600;
+  color: #0E2562;
+}
+
+.otp-collect-box-main-wrapper{
+  display: grid;
+  place-items: center;
+}
+
+.otp-collect-box-main{
+  display: grid;
+  height: 70%;
+  width: 100%;
+  grid-template-rows: 1fr 2fr 4fr;
+}
+
+.otp-collect-box-main-details{
+}
+
+.otp-collect-box-main-input{
+  display: grid;
+  place-items: center;
+}
+
+.otp-collect-box-main-input input{
+  border: 1px solid #3395FF;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 15px 25%;
+  letter-spacing: 15px;
+  width: 100%;
+}
+
+.otp-collect-box-main-button-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.otp-page-footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: #646D8B;
+}
+
+.submit-otp-button{
+  grid-column: span 2;
+  background: #005BF2;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.alternate-action-button{
+  color: #005BF2;
+  font-size: 0.8rem;
+}
+
+#cancel-payment-button{
+  text-align: start;
+  margin-left: 10px;
+}
+
+#resend-otp-button{
+  text-align: end;
+  margin-right: 10px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

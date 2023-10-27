@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="otp-page-wrapper">
+      <div class="otp-page-wrapper-bg"></div>
+      <div class="otp-page-container">
+        <div class="otp-page-details-wrapper">
+          <div class="otp-page-details">
+            <div class="otp-page-details-element" id="left-detail-element">
+              <span>
+                Paying to
+              </span>
+              <span>
+                <b>  
+                  Acme Corp
+                </b>
+              </span>
+            </div>
+            <div class="otp-page-details-element" id="right-detail-element">
+              <span>
+                Date
+              </span>
+              <span>
+                <b>  
+                  Oct 12, 2023
+                </b>
+              </span>
+            </div>
+            <div class="otp-page-details-element" id="left-detail-element">
+              <span>
+                Card Number
+              </span>
+              <span>
+                <b>  
+                  58XX XXXX XXXX 6891
+                </b>
+              </span>
+            </div>
+            <div class="otp-page-details-element" id="right-detail-element">
+              <span>
+                Total Amount
+              </span>
+              <span>
+                <b>  
+                  1.00
+                </b>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="otp-collect-box-wrapper">
+          <div class="otp-collect-box">
+            <div class="otp-collect-box-header">
+              <div class="otp-collect-box-header-logo"><img src="/images/mastercard-logo.png" /></div>
+              <div class="otp-collect-box-header-logo"><img src="/images/canara_bank_logo.png" /></div>
+            </div>
+            <div class="otp-collect-box-main-wrapper">
+              <div class="otp-collect-box-main">
+                <div class="otp-collect-box-main-details">
+                  <p><b>Enter OTP</b> sent to +91********78</p>
+                </div>
+                <div class="otp-collect-box-main-input">
+                  <input type="number" label="otp-value" maxlength="6"/>
+                </div>
+                <div class="otp-collect-box-main-button-group">
+                  <button class="submit-otp-button">Submit OTP</button>
+                  <button class="alternate-action-button" id="cancel-payment-button">Cancel Payment</button>
+                  <button class="alternate-action-button" id="resend-otp-button">Resend OTP</button>
+                </div>
+              </div>
+            </div>
+            <div class="otp-collect-box-footer">
+              <div class="otp-collect-box-footer-logo">
+                <img src="/images/razorpay_logo.svg" />
+                <span>SECURE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="otp-page-footer">
+          <p>This page will timeout after 01:15 minutes</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
