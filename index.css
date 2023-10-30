@@ -1,4 +1,5 @@
 * {
+  font-size: 16px;
   box-sizing: border-box;
   font-family: 'Inter';
 }
@@ -12,7 +13,6 @@ body{
   position: absolute;
   height: 35%;
   width: 100%;
-  z-index: -1;
   top:0;
   background: linear-gradient(0deg, #7EDEFF -70.29%, #0041B1 100%);
 }
@@ -24,37 +24,54 @@ body{
   display: grid;
   place-items: center;
   background: #F5F5F5;
-  z-index: -2;
 }
 
 .otp-page-container{
   height: 100%;
   width: 100%;
   max-width: 400px;
-  max-height: 700px;
+  max-height: 800px;
   display: grid;
-  grid-template-rows: 2fr 7fr 1fr;
+  grid-template-rows: 20% 70% 10%;
+  z-index: 2;
 }
 
 .otp-page-details-wrapper{
-  padding: 5px;
+  padding: 10px;
   padding-bottom: 0px;
 }
 
+.otp-page-details-wrapper-bg{
+  top:0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: url("./images/canara_bg.png");
+  background-size: cover;
+}
+
 .otp-page-details{
+  position: relative;
   padding: 10px;
   height: 100%;
   width: 100%;
   display: grid;
   align-items: center;
-  background: #E6F0FF;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
 .otp-page-details-element{
+  margin: 10px 5px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+}
+
+.otp-page-details-element span{
+  margin: 2px;
 }
 
 #right-detail-element{
@@ -73,9 +90,8 @@ body{
 }
 
 .otp-collect-box{
-  height: 100%;
   display: grid;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-rows: 15% 60% 25%;
 }
 
 .otp-collect-box-header{
@@ -86,6 +102,11 @@ body{
 
 .otp-collect-box-header-logo img{
   height: 32px;
+}
+
+.otp-collect-box-footer{
+  display: flex;
+  flex-direction: column;
 }
 
 .otp-collect-box-footer-logo img{
@@ -113,14 +134,14 @@ body{
 
 .otp-collect-box-main-wrapper{
   display: grid;
-  place-items: center;
+  align-items: center;
 }
 
 .otp-collect-box-main{
   display: grid;
-  height: 70%;
+  height: 80%;
   width: 100%;
-  grid-template-rows: 1fr 2fr 4fr;
+  grid-template-rows: 25% 25% 40%;
 }
 
 .otp-collect-box-main-details{
@@ -133,11 +154,16 @@ body{
 
 .otp-collect-box-main-input input{
   border: 1px solid #3395FF;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   outline: none;
-  padding: 15px 25%;
+  padding: 15px 30%;
   letter-spacing: 15px;
   width: 100%;
+}
+
+.otp-collect-box-main-footnote p{
+  color: #646D8B;
+  font-size: 0.8rem;
 }
 
 .otp-collect-box-main-button-group{
@@ -157,14 +183,14 @@ body{
   grid-column: span 2;
   background: #005BF2;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 4px;
   appearance: none;
 }
 
 .alternate-action-button{
   color: #005BF2;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 #cancel-payment-button{
@@ -195,4 +221,14 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+@media screen and (max-height: 700px) {
+  * {
+    font-size: 12px;
+  }
+
+  .otp-page-container {
+    grid-template-rows: 25% 65% 10%;
+  }
 }

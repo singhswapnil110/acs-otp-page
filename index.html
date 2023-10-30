@@ -21,6 +21,7 @@
       <div class="otp-page-container">
         <div class="otp-page-details-wrapper">
           <div class="otp-page-details">
+            <div class="otp-page-details-wrapper-bg"></div>
             <div class="otp-page-details-element" id="left-detail-element">
               <span>
                 Paying to
@@ -57,7 +58,7 @@
               </span>
               <span>
                 <b>  
-                  1.00
+                  ₹1.00
                 </b>
               </span>
             </div>
@@ -75,7 +76,7 @@
                   <p><b>Enter OTP</b> sent to +91********78</p>
                 </div>
                 <div class="otp-collect-box-main-input">
-                  <input type="number" label="otp-value" maxlength="6"/>
+                  <input type="number" label="otp-value" maxlength="6" onKeyPress="if(this.value.length==6) return false;" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
                 </div>
                 <div class="otp-collect-box-main-button-group">
                   <button class="submit-otp-button">Submit OTP</button>
@@ -85,6 +86,9 @@
               </div>
             </div>
             <div class="otp-collect-box-footer">
+              <div class="otp-collect-box-main-footnote">
+                <p>Please ensure that your latest mobile number is updated in the Bank records. Visit nearest branch or call customer case for the same.</p>
+              </div>
               <div class="otp-collect-box-footer-logo">
                 <img src="/images/razorpay_logo.svg" />
                 <span>SECURE</span>
