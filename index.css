@@ -29,8 +29,8 @@ body{
 .otp-page-container{
   height: 100%;
   width: 100%;
-  max-width: 400px;
-  max-height: 800px;
+  max-width: 450px;
+  max-height: 750px;
   display: grid;
   grid-template-rows: 20% 70% 10%;
   z-index: 2;
@@ -61,6 +61,7 @@ body{
   align-items: center;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding-bottom: 10px;
 }
 
 .otp-page-details-element{
@@ -91,7 +92,7 @@ body{
 
 .otp-collect-box{
   display: grid;
-  grid-template-rows: 15% 60% 25%;
+  grid-template-rows: 15% 80% 5%;
 }
 
 .otp-collect-box-header{
@@ -110,10 +111,7 @@ body{
 }
 
 .otp-collect-box-footer-logo img{
-  position: absolute;
-  top: 47%;
-  left: 25%;
-  height: 20px;
+  width: 40%;
 }
 
 .otp-collect-box-footer-logo{
@@ -124,27 +122,20 @@ body{
   justify-content: center;
 }
 
-.otp-collect-box-footer-logo span{
-  position: absolute;
-  top: 50%;
-  left: 53%;
-  font-weight: 600;
-  color: #0E2562;
-}
-
 .otp-collect-box-main-wrapper{
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .otp-collect-box-main{
+  align-self: flex-end;
   display: grid;
-  height: 80%;
+  height: 60%;
   width: 100%;
-  grid-template-rows: 25% 25% 40%;
+  grid-template-rows: 25% 25% 50%;
 }
 
-.otp-collect-box-main-details{
+.otp-collect-box-main-footnote{
 }
 
 .otp-collect-box-main-input{
@@ -162,7 +153,13 @@ body{
 }
 
 .otp-collect-box-main-footnote p{
+  align-self: flex-start;
   color: #646D8B;
+  font-size: 0.8rem;
+  height: 15%;
+}
+
+.otp-collect-box-main-footnote-text > b{
   font-size: 0.8rem;
 }
 
@@ -225,7 +222,7 @@ button, input[type="submit"], input[type="reset"] {
 
 @media screen and (max-height: 700px) {
   * {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .otp-page-container {
